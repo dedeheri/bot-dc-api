@@ -14,6 +14,10 @@ function start() {
   server.use(bodyParser.json());
   server.use(cors());
 
+  server.get("/", (req, res) =>
+    res.status(200).json({ message: "Api Working" })
+  );
+
   // static
   server.use("/image", express.static(path.join(__dirname, "../assets")));
 

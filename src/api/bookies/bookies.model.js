@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const bookies = mongoose.Schema(
   {
     name: { type: String },
-    handphone: { type: Number, default: 0 },
+    handphone: { type: String },
   },
   { timestamps: true }
 );
